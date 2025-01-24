@@ -1,1 +1,8 @@
-# Final_Project_HarvardCS50
+  # Automated Stock Market Exploratory Analysis
+
+**Description**
+This Python script automates exploratory analysis of stock investments using historical data. It prompts the user for the stock code, initial investment amount, and analysis period, validating inputs to ensure correctness. Stock codes are appended with ".SA" by default to match the Yahoo Finance format for Brazilian stocks. However, the script can be adapted to include other extensions for stocks listed on different exchanges, ensuring flexibility for global users. The investment amount must be a positive integer, and the dates are verified for proper formatting and to ensure they are in the past.
+
+Using the yfinance library, the script retrieves stock data for the specified period and calculates key metrics if data is available. These include portfolio value over time, 50-period simple moving averages (SMA), daily returns, and risk metrics such as volatility, value at risk (VaR) at 95% confidence, and maximum drawdown. The portfolio value is calculated based on the initial investment and the stock’s closing prices, while daily returns are derived from percentage changes in closing prices. The results are displayed in a well-organized table using the tabulate library.
+
+Additionally, the script provides descriptive statistics, including the mean, standard deviation, and other key measures, to give users a deeper understanding of the stock's performance during the specified period. It is designed to handle common errors, such as invalid stock codes, incorrect date formats, or non-positive investment amounts, ensuring robust and user-friendly functionality. This clear and systematic approach helps users interpret the results and make informed decisions about their investments.
